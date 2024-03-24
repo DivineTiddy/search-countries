@@ -227,10 +227,21 @@ select {
     .for_search{
         width: 80%;
     }
+    .view{
+        width: 80%;
+    }
     .delete{
         width: 10%;
+        margin: 0px 5px;
+    }
+    #Borders{
+        overflow: hidden;
     }
     #image{
         width: 10%;
+        margin: 0px 5px;
+    }
+    .contain{
+        width: 70%;
     }
 }

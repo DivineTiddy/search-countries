@@ -148,7 +148,10 @@ search.addEventListener(`click`, function (e) {
   request.send();
   request.addEventListener(`load`, function () {
     const [data] = JSON.parse(this.responseText);
-    console.log(data);
+    if (!data.Borders) {
+        return 0
+    }
+    
     const html = `
   <div class="view">
             <img id="image" src="${data.flags.svg}">
@@ -160,7 +163,7 @@ search.addEventListener(`click`, function (e) {
                 : ${data.capital}</p>
                 <p>startOfWeek▶: ${data.startOfWeek}</p>
                 <p>Population👨‍👨‍👧‍👧: ${data.population}</p>
-                <p>Borders⛵: ${data.borders}</p>
+                <p id="Borders">Borders⛵: ${data.borders}</p>
 
                 
             </div>
