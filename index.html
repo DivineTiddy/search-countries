@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitstudio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="header.js"></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <section class="login__container">
+      <h1>Login</h1>
+      <h1 class="errorForlogin">invalid details ❌</h1>
+
+      <p>Enter your details to login</p>
+      <form id="">
+        <input id="login_number" placeholder="Enter phone number" /><br />
+        <input id="login__password" placeholder="Enter password" /><br />
+        <a href="#">Forgot password</a><br />
+        <button id="login" class="login__btn" type="submit">Login</button><br />
+        <div class="or">
+          <svg
+            width="167"
+            height="2"
+            viewBox="0 0 167 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="0.5" width="166.5" height="1" fill="#8895A2" />
+          </svg>
+          <p>or login with</p>
+          <svg
+            width="167"
+            height="2"
+            viewBox="0 0 167 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="0.5" width="166.5" height="1" fill="#8895A2" />
+          </svg>
+        </div>
+        <button class="Google__btn">
+          <svg
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_98_2452)">
+              <path
+                d="M19.9895 10.6871C19.9895 9.86767 19.9214 9.26973 19.7742 8.64966H10.1992V12.348H15.8195C15.7062 13.2671 15.0943 14.6512 13.7346 15.5813L13.7155 15.7051L16.7429 17.9969L16.9527 18.0174C18.8789 16.2789 19.9895 13.721 19.9895 10.6871Z"
+                fill="#4285F4"
+              />
+              <path
+                d="M10.1993 20.4314C12.9527 20.4314 15.2643 19.5456 16.9527 18.0175L13.7346 15.5814C12.8734 16.1683 11.7176 16.578 10.1993 16.578C7.50242 16.578 5.21352 14.8396 4.39759 12.4368L4.27799 12.4467L1.13003 14.8274L1.08887 14.9392C2.76588 18.1946 6.2106 20.4314 10.1993 20.4314Z"
+                fill="#34A853"
+              />
+              <path
+                d="M4.39748 12.4368C4.18219 11.8167 4.05759 11.1523 4.05759 10.4658C4.05759 9.77927 4.18219 9.11492 4.38615 8.49484L4.38045 8.36278L1.19304 5.94385L1.08876 5.99232C0.397576 7.34324 0.000976562 8.86026 0.000976562 10.4658C0.000976562 12.0714 0.397576 13.5884 1.08876 14.9393L4.39748 12.4368Z"
+                fill="#FBBC05"
+              />
+              <path
+                d="M10.1993 4.35336C12.1142 4.35336 13.406 5.16168 14.1425 5.83718L17.0207 3.09107C15.253 1.4855 12.9527 0.5 10.1993 0.5C6.2106 0.5 2.76588 2.73672 1.08887 5.99214L4.38626 8.49466C5.21352 6.09183 7.50242 4.35336 10.1993 4.35336Z"
+                fill="#EB4335"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_98_2452">
+                <rect
+                  width="20"
+                  height="20"
+                  fill="white"
+                  transform="translate(0 0.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="Google">Google</span>
+        </button>
+      </form>
+      <p>Dont have account? <span class="sign_up">sign up</span></p>
+    </section>
+    <!----create account section----->
+    <section class="hidden">
+      <div class="back">
+        <a class="refresh" href=""> 👈 </a>
+        <p>step 1/1</p>
+      </div>
+      <section class="create">
+        <h1 class="error">invalid details ❌</h1>
+
+        <h1 class="success">Account successfully created ✅</h1>
+        <p class="success"><a href="">click here to login</a></p>
+
+        <h1>Fill your personal details</h1>
+        <p>Let us know you better</p>
+        <form id="submit">
+          <input id="Username" placeholder="Username" /><br />
+          <input id="number" placeholder="Phone number" /><br />
+          <input id="password" placeholder="password" /><br />
+
+          <input id="Date" type="date" placeholder="Date of birth" /><br />
+          <select>
+            <option>Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option></select
+          ><br />
+          <button class="create__btn" type="submit">Submit</button>
+        </form>
+      </section>
+    </section>
+    <!--------country data information----------->
+    <section class="hidden_dashbaord">
+      <div class="header">
+        <h1 class="Welcome">Welcome back Tiddy</h1>
+        <p>Search for country</p>
+        <div class="for_search">
+          <input
+            autocomplete="additional-name"
+            id="search__input"
+            placeholder="Country name"
+          />
+          <button class="search">Search no</button>
+        </div>
+      </div>
+
+      <!------display datas---------->
+      <section class="display"></section>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+body {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: #f4f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.refresh {
+  text-decoration: none;
+  color: black;
+}
+.success{
+    display: none;
+}
+.error{
+    display: none;
+}
+.errorForlogin{
+    display: none;
+}
+.error_active{
+    display: flex;
+}
+.success_active{
+    display: flex;
+}
+.login__container {
+  width: 40%;
+  height: 70%;
+  display: flex; /*flex*/
+  flex-direction: column;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+.sign_up {
+  cursor: pointer;
+}
+form input,
+button,
+select {
+  padding: 0.7rem 0rem;
+  width: 100%;
+  margin: 0.5rem 0rem;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.login__btn {
+  background-color: #ff505f;
+  color: white;
+}
+
+.or {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.Google__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Google {
+  margin: 0px 10px;
+}
+/* create account */
+.create____back__container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 100%;
+  transition: all 1s ease-in-out;
+}
+
+.back {
+  width: 100%;
+  height: 10vh;
+}
+.create {
+  width: 40%;
+  height: 70%;
+  display: flex; /*flex*/
+  flex-direction: column;
+  align-items: center;
+}
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.back__icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.create__btn {
+  background-color: #ff505f;
+  color: white;
+}
+/*country__data*/
+.hidden_dashbaord {
+  display: none;
+  opacity: 100px;
+}
+.country__data {
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0px;
+  transition: all 1s ease;
+}
+.header {
+    border-radius: 10px;
+  box-shadow: 0 0 5px lightgray, 0 0 10px lightgray, 0 0 10px lightgray,
+    0 0 10px lightgray;
+
+  width: 100%;
+  height: 50%;
+  background-color: #161a1d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+.for_search {
+  width: 50%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin: 1.5rem 0rem;
+}
+.search {
+  width: 30% !important;
+  height: inherit !important;
+  border-radius: 0px;
+  border: none;
+  background-color: #ff505f;
+  color: white;
+}
+#search__input {
+  width: 70% !important;
+  height: inherit;
+  outline: none;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/*display*/
+.display {
+  width: 100%;
+  height: auto;
+}
+.view {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 1rem 0rem;
+  box-shadow: 0 0 5px lightgray, 0 0 10px lightgray, 0 0 10px lightgray,
+    0 0 10px lightgray;
+}
+#image {
+  width: 20%;
+  height: inherit;
+}
+.contain {
+  width: 60%;
+  height: inherit;
+  text-align: center;
+}
+.delete {
+  width: 20%;
+  height: inherit;
+  display: flex;
+  align-items: end;
+}
+.Delete__btn {
+  background-color: #161a1d;
+  color: white;
+}
+.coatOfArms {
+  width: 50px;
+  height: 50px;
+}
+@media screen and (max-width: 100px) {
+    .create{
+        width: 80%;
+    }
+    .login__container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .login__container{
+        width: 90%;
+    }
+    .create{
+        width: 90%;
+    }
+    .country__data{
+        width: 100%;
+    }
+    .for_search{
+        width: 80%;
+    }
+    .delete{
+        width: 10%;
+    }
+    #image{
+        width: 10%;
+    }
+}
