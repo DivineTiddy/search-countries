@@ -148,9 +148,7 @@ search.addEventListener(`click`, function (e) {
   request.send();
   request.addEventListener(`load`, function () {
     const [data] = JSON.parse(this.responseText);
-    if (!data.Borders) {
-        return 0
-    }
+ 
     
     const html = `
   <div class="view">
